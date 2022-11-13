@@ -1,0 +1,902 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Самые безопасные авиакомпании мира 2013 - Летаем вместе</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#2955d9">
+        <meta name="msapplication-TileColor" content="#2955d9">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body class="page" data-svg-icons-path="static/img/svg-sprite/svg-symbols.svg">
+
+
+        <section class="section-header">
+            <header class="header">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg flex-lg-nowrap align-items-lg-end">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="static/img/general/logo.png" width="196px" alt="Летаем вместе">
+                        </a>
+                        <a href="#" class="nav-toggle d-lg-none"><span></span></a>
+                        <div class="navbar-navigation mr-0 ml-auto" role="navigation">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="icon icon-airline"></i>
+                                        <span>Авиакомпании</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="icon icon-airport"></i>
+                                        <span>Аэропорты</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="icon icon-aircraft"></i>
+                                        <span>Самолёты</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="icon icon-travels"></i>
+                                        <span>Путешествия</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="icon icon-tickets"></i>
+                                        <span>Авиабилеты</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="container-fluid">
+                <div class="search">
+                    <ul class="nav nav-tabs search__tabs" id="search" role="tablist">
+                        <li class="search__item" role="presentation">
+                            <a class="search__link active" id="flights-tab" data-toggle="tab" href="#flights" role="tab" aria-controls="flights" aria-selected="true">
+                                <i class="icon icon-flights"></i> Авиабилеты
+                            </a>
+                        </li>
+                        <li class="search__item" role="presentation">
+                            <a class="search__link" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="false">
+                                <i class="icon icon-hotel"></i> Отели
+                            </a>
+                        </li>
+                        <li class="search__item" role="presentation">
+                            <a class="search__link" id="hire-tab" data-toggle="tab" href="#hire" role="tab" aria-controls="hire" aria-selected="false">
+                                <i class="icon icon-hire"></i> Прокат авто
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content search__content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="flights" role="tabpanel" aria-labelledby="flights-tab">
+                            <h2 class="mb-4">Поиск лучших авиабилетов</h2>
+                            <form class="search-form row align-items-end flex-xl-nowrap">
+                                <div class="search-form__group search-form__group_place col-12 col-md-6 col-xl-auto">
+                                    <div class="form-group">
+                                        <label for="city-from">Город вылета</label>
+                                        <input autocomplete="off" class="form-control" placeholder="Москва" name="city-from" id="city-from">
+                                    </div>
+                                    <div class="form-group_icon d-none d-sm-block">
+                                        <div class="d-block" id="form-exchange">
+                                            <i class="icon icon-exchange"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city-to">Город прибытия</label>
+                                        <input autocomplete="off" class="form-control" placeholder="Санкт-Петербург" id="city-to" name="city-to">
+                                    </div>
+                                </div>
+                                <div class="search-form__group search-form__group_date col-12 col-md-6 col-xl-auto">
+                                    <div class="form-group">
+                                        <label>Туда</label>
+                                        <div class="input-group">
+                                            <input autocomplete="off" type="text" class="form-control datepicker" placeholder="15.12.2020" aria-describedby="addon-from" id="from" name="from">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="addon-from"><i
+                                            class="icon icon-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Обратно</label>
+                                        <div class="input-group">
+                                            <input autocomplete="off" type="text" class="form-control datepicker" placeholder="16.12.2020" aria-describedby="addon-back" id="back" name="back">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="addon-back"><i
+                                            class="icon icon-calendar"></i></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="search-form__group col-12 col-sm-auto flex-grow-1">
+                                    <div class="form-group">
+                                        <label class="number">Количество пассажиров</label>
+                                        <select class="search-select" data-style="form-control" name="number" id="number" title="Выберите количество" multiple>
+                                            <optgroup label="Количество" data-max-options="1">
+                                                <option value="1">1 пассажир</option>
+                                                <option value="2">2 пассажира</option>
+                                                <option value="3">3 пассажира</option>
+                                                <option value="4">4 пассажира</option>
+                                                <option value="5">5 пассажиров</option>
+                                            </optgroup>
+                                            <optgroup label="Класс" data-max-options="1">
+                                                <option value="эконом">эконом</option>
+                                                <option value="бизнес">бизнес</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group mr-sm-0 ml-sm-auto col-auto">
+                                    <button type="submit" class="btn btn-secondary">Найти билеты</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
+                            <h2 class="mb-4">Поиск лучших отелей</h2>
+                            <form class="search-form row align-items-end flex-xl-nowrap">
+                                <div class="search-form__group search-form__group_place col-12 col-xl-auto">
+                                    <div class="form-group w-100">
+                                        <label for="city-hotel">Город</label>
+                                        <input autocomplete="off" class="form-control" placeholder="Москва" name="city-hotel" id="city-hotel">
+                                    </div>
+                                </div>
+                                <div class="search-form__group search-form__group_date col-12 col-xl-auto">
+                                    <div class="form-group">
+                                        <label>Дата прибытия</label>
+                                        <div class="input-group">
+                                            <input autocomplete="off" type="text" class="form-control datepicker" placeholder="15.12.2020" aria-describedby="addon-from-hotel" id="from-hotel" name="from-hotel">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="addon-there-hotel"><i
+                                            class="icon icon-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Дата отъезда</label>
+                                        <div class="input-group">
+                                            <input autocomplete="off" type="text" class="form-control datepicker" placeholder="16.12.2020" aria-describedby="addon-back-hotel" id="back-hotel" name="back-hotel">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="addon-back-hotel"><i
+                                            class="icon icon-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-form__group col-12 col-sm-auto flex-grow-1">
+                                    <div class="form-group">
+                                        <label>Количество проживающих</label>
+                                        <select class="search-select" multiple data-style="form-control" title="Выберите количество">
+                                            <optgroup label="Количество взрослых" data-max-options="1">
+                                                <option>1 взрослый</option>
+                                                <option>2 взрослых</option>
+                                                <option>3 взрослых</option>
+                                                <option>4 взрослых</option>
+                                            </optgroup>
+                                            <optgroup label="Количество детей" data-max-options="1">
+                                                <option>1 ребенок</option>
+                                                <option>2 ребенка</option>
+                                                <option>3 ребенка</option>
+                                                <option>4 ребенка</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group mr-sm-0 ml-sm-auto col-12 col-sm-auto ">
+                                    <button type="submit" class="btn btn-secondary">Найти отели</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="hire" role="tabpanel" aria-labelledby="hire-tab">
+                            <h2 class="mb-4">Поиск лучшего проката авто</h2>
+                            <form class="search-form row align-items-end flex-xl-nowrap">
+                                <div class="search-form__group search-form__group_place col-12 col-xl-auto">
+                                    <div class="form-group w-100">
+                                        <label for="city-hire">Город</label>
+                                        <input autocomplete="off" class="form-control" placeholder="Москва" name="city-hire" id="city-hire">
+                                    </div>
+                                </div>
+                                <div class="search-form__group search-form__group_date col-12 col-xl-auto">
+                                    <div class="form-group">
+                                        <label>Начало</label>
+                                        <div class="input-group">
+                                            <input autocomplete="off" type="text" class="form-control datepicker" placeholder="15.12.2020" aria-describedby="addon-from-hire" id="from-hire" name="from-hire">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="addon-there-hire"><i
+                                            class="icon icon-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Окончание</label>
+                                        <div class="input-group">
+                                            <input autocomplete="off" type="text" class="form-control datepicker" placeholder="16.12.2020" aria-describedby="addon-back-hire" id="back-hire" name="back-hire">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="addon-back-hire"><i
+                                            class="icon icon-calendar"></i></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="search-form__group col-12 col-sm-auto flex-grow-1">
+                                    <div class="form-group">
+                                        <label>Тип управления</label>
+                                        <select class="search-select" multiple data-style="form-control" title="Выберите тип" data-max-options="1">
+                                            <option>автомат</option>
+                                            <option>механика</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group mr-sm-0 ml-sm-auto col-12 col-sm-auto">
+                                    <button type="submit" class="btn btn-secondary">Найти прокат</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-menu">
+                <div class="container-fluid">
+                    <ul class="catalog-menu__list">
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Туры</a>
+                        </li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Турбазы</a>
+                        </li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Горящие туры</a>
+                        </li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Авиабилеты</a>
+                        </li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Отели</a>
+                        </li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Прокат авто</a>
+                        </li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Страховка</a>
+                        </li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Экскурсии</a>
+                        </li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Визы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section my-sm-4" id="section-catalog">
+            <div class="container-fluid">
+                <div class="section__header">
+                    <h1 class="mb-2">Самые безопасные авиакомпании мира 2013</h1>
+                    <div class="date d-flex align-items-center mb-2"><i class="icon icon-calendar"></i>Обновлено: 2 декабря 2020
+                    </div>
+                </div>
+                <div class="catalog">
+                    <article class="catalog-article">
+                        <p class="content mb-6">
+                            Приветствуем всех читателей нашего журнала!
+                            <br/>Летаем вместе! - наш семейный Интернет-проект для авиапассажиров. Здесь Вы найдёте новости, справочную информацию и <a href="catalog.html">рейтинги
+                    авиакомпаний</a>, аэропортов, самолётов, а также развлекательную информацию из области гражданской авиации.
+                        </p>
+                        <div class="content">
+                            <figure>
+                                <img width="100%" src="static/img/content/item/item-1.jpg">
+                                <figcaption>Название или комментарий к фотографии</figcaption>
+                            </figure>
+                            <h4>Самые безопасные авиакомпании мира 2020</h4>
+                            <p>
+                                2013 год вновь стал самым безопасным в истории авиации. Количество погибших в авиакатастрофах снизилось почти в 2 раза (251 - 2013 год, 496 - 2012 год). При этом авиаперевозки растут и составили в ушедшем году более 3 миллиардов пассажиров.
+                            </p>
+                            <div class="attention">
+                                <p>Предлагаю читателям ознакомиться с самыми безопасными авиакомпаниями мира по итогам 2013 года. Рейтинг составлен авторитетной немецкой организацией JACDEC (Jet Airliner Crash Data Evaluation Center) на основе данных за
+                                    последние 30 лет (с 1984 по 2013 годы). Данный рейтинг хорош тем что учитывает в том числе и объёмы перевозок авиакомпаний.</p>
+                            </div>
+                            <figure>
+                                <img width="100%" src="static/img/content/item/item-2.jpg">
+                                <figcaption>Название или комментарий к фотографии</figcaption>
+                            </figure>
+
+                            <h4>Самые безопасные авиакомпании мира 2020</h4>
+                            <p>2013 год вновь стал самым безопасным в истории авиации. Количество погибших в авиакатастрофах снизилось почти в 2 раза (251 - 2013 год, 496 - 2012 год). При этом авиаперевозки растут и составили в ушедшем году более 3 миллиардов
+                                пассажиров.</p>
+                            <p>Предлагаю читателям ознакомиться с самыми безопасными авиакомпаниями мира по итогам 2013 года. Рейтинг составлен авторитетной немецкой организацией JACDEC (Jet Airliner Crash Data Evaluation Center) на основе данных за последние
+                                30 лет (с 1984 по 2013 годы). Данный рейтинг хорош тем что учитывает в том числе и объёмы перевозок авиакомпаний.</p>
+                            <figure>
+                                <img width="100%" src="static/img/content/item/item-3.jpg">
+                                <figcaption>Название или комментарий к фотографии</figcaption>
+                            </figure>
+                            <h4>Самые безопасные авиакомпании мира 2020</h4>
+                            <p>2013 год вновь стал самым безопасным в истории авиации. Количество погибших в авиакатастрофах снизилось почти в 2 раза (251 - 2013 год, 496 - 2012 год). При этом авиаперевозки растут и составили в ушедшем году более 3 миллиардов
+                                пассажиров.</p>
+                            <ul>
+                                <li>2013 год вновь стал самым безопасным в истории авиации. Количество погибших в авиакатастрофах снизилось почти в 2 раза (251 - 2013 год, 496 - 2012 год).
+                                </li>
+                                <li>При этом авиаперевозки растут и составили в ушедшем году более 3 миллиардов пассажиров.</li>
+                                <li>Предлагаю читателям ознакомиться с самыми безопасными авиакомпаниями мира по итогам 2013 года.
+                                </li>
+                                <li>Рейтинг составлен авторитетной немецкой организацией JACDEC (Jet Airliner Crash Data Evaluation Center) на основе данных за последние 30 лет (с 1984 по 2013 годы).
+                                </li>
+                                <li>Данный рейтинг хорош тем что учитывает в том числе и объёмы перевозок авиакомпаний.</li>
+                            </uL>
+                            <div class="attention attention-light">
+                                <p>Предлагаю читателям ознакомиться с самыми безопасными авиакомпаниями мира по итогам 2013 года. Рейтинг составлен авторитетной немецкой организацией JACDEC (Jet Airliner Crash Data Evaluation Center) на основе данных за
+                                    последние 30 лет (с 1984 по 2013 годы). Данный рейтинг хорош тем что учитывает в том числе и объёмы перевозок авиакомпаний.</p>
+                            </div>
+                            <div class="attention attention-question">
+                                <p>Предлагаю читателям ознакомиться с самыми безопасными авиакомпаниями мира по итогам 2013 года. Рейтинг составлен авторитетной немецкой организацией JACDEC (Jet Airliner Crash Data Evaluation Center) на основе данных за
+                                    последние 30 лет (с 1984 по 2013 годы). Данный рейтинг хорош тем что учитывает в том числе и объёмы перевозок авиакомпаний.</p>
+                            </div>
+                            <blockquote>
+                                <p>Предлагаю читателям ознакомиться с самыми безопасными авиакомпаниями мира по итогам 2013 года. Рейтинг составлен авторитетной немецкой организацией JACDEC (Jet Airliner Crash Data Evaluation Center) на основе данных за
+                                    последние 30 лет (с 1984 по 2013 годы). Данный рейтинг хорош тем что учитывает в том числе и объёмы перевозок авиакомпаний.</p>
+                            </blockquote>
+                        </div>
+                        <div class="tags row ">
+                            <a href="#" class="tags__item col-auto">#рейтинг</a>
+                            <a href="#" class="tags__item col-auto">#авиакомпания</a>
+                            <a href="#" class="tags__item col-auto">#полезно</a>
+                            <a href="#" class="tags__item col-auto">#безопасность</a>
+                        </div>
+                        <div class="repost my-4">
+                            <h5>Поделиться:</h5>
+                            <a href="#" class="vk"><i class="icon icon-vk"></i></a>
+                            <a href="#" class="facebook"><i class="icon icon-facebook"></i></a>
+                            <a href="#" class="twitter"><i class="icon icon-twitter"></i></a>
+                            <a href="#" class="odnoklassniki"><i class="icon icon-ok"></i></a>
+                            <a href="#" class="telegram"><i class="icon icon-telegram"></i></a>
+                            <a href="#" class="mail"><i class="icon icon-mail"></i></a>
+                        </div>
+                        <div class="comments mt-4">
+                            <h2 class="font-semi mb-2">3 комментария</h2>
+                            <form class="comments-form mb-1">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="comment" name="comment">Напишите комментарий</textarea>
+                                </div>
+                                <div class="form-group">
+                                    <a href="#" class="btn btn-outline-primary">Отправить</a>
+                                </div>
+                            </form>
+                            <ul class="comments-list">
+                                <li>
+                                    <div class="comments-list__item">
+                                        <div class="comments-list__title">
+                                            <figure class="comments-list__img" style="background-image: url('static/img/content/catalog/catalog-1.jpg')"></figure>
+                                            <div>
+                                                <h5>Эдуард Радковский</h5>
+                                                <p class="date">13.03.20 15:38</p>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <p>Краснодар и раньше вполне достойное место мог занять, но тесный терминал мешает его развитию. Когда идет регистрация на два рейса, здесь просто аццкий ад. Давно надо было начинать строить новый терминал или
+                                                что-то делать для расширения действующего.</p>
+                                        </div>
+                                        <a href="#" class="comments-list__answer" data-form="false">Ответить</a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="comments-list__item">
+                                                <div class="comments-list__title">
+                                                    <figure class="comments-list__img" style="background-image: url('static/img/general/person.jpg')"></figure>
+                                                    <div>
+                                                        <h5>Люба Смирнова</h5>
+                                                        <p class="date">13.03.20 15:38</p>
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <p>Судя по декабрьским результатам, Домодедово в текущем году может съехать на второе место. Печалька:-(
+                                                    </p>
+                                                    <p>Сочи на счет олимпиады в этом году вполне может обогнать Краснодар. А Внуково за счет почти полноценного прихода сюда Трансаэро вполне может вернуть тебе третью строчку в рейтинге.
+                                                    </p>
+                                                </div>
+                                                <a href="#" class="comments-list__answer" data-form="false">Ответить</a>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="comments-list__item">
+                                                        <div class="comments-list__title">
+                                                            <figure class="comments-list__img" style="background-image: url('static/img/general/person.jpg')"></figure>
+                                                            <div>
+                                                                <h5>Люба Смирнова</h5>
+                                                                <p class="date">13.03.20 15:38</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p>Судя по декабрьским результатам, Домодедово в текущем году может съехать на второе место. Печалька:-(
+                                                            </p>
+                                                            <p>Сочи на счет олимпиады в этом году вполне может обогнать Краснодар. А Внуково за счет почти полноценного прихода сюда Трансаэро вполне может вернуть тебе третью строчку в рейтинге.
+                                                            </p>
+                                                        </div>
+                                                        <a href="#" class="comments-list__answer" data-form="false">Ответить</a>
+                                                    </div>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="comments-list__item">
+                                                                <div class="comments-list__title">
+                                                                    <figure class="comments-list__img" style="background-image: url('static/img/general/person.jpg')"></figure>
+                                                                    <div>
+                                                                        <h5>Люба Смирнова</h5>
+                                                                        <p class="date">13.03.20 15:38</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>Судя по декабрьским результатам, Домодедово в текущем году может съехать на второе место. Печалька:-(
+                                                                    </p>
+                                                                    <p>Сочи на счет олимпиады в этом году вполне может обогнать Краснодар. А Внуково за счет почти полноценного прихода сюда Трансаэро вполне может вернуть тебе третью строчку в рейтинге.
+                                                                    </p>
+                                                                </div>
+                                                                <a href="#" class="comments-list__answer" data-form="false">Ответить</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="comments-list__item">
+                                        <div class="comments-list__title">
+                                            <figure class="comments-list__img" style="background-image: url('static/img/content/catalog/catalog-3.jpg')"></figure>
+                                            <div>
+                                                <h5>Эдуард Радковский</h5>
+                                                <p class="date">13.03.20 15:38</p>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <p>Добрый день. По Магаданскому аэропорту нет информации??? Я понимаю что аэропорт маленький, но было бы интересно узнать по нему.</p>
+                                        </div>
+                                        <a href="#" class="comments-list__answer" data-form="false">Ответить</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </article>
+                    <aside class="catalog-aside">
+                        <h3 class="mb-2">Рубрики</h3>
+                        <ul class="catalog-aside-nav">
+                            <li class="catalog-aside-nav__item">
+                                <a href="#" class="catalog-aside-nav__link">Рейтиги</a>
+                            </li>
+                            <li class="catalog-aside-nav__item">
+                                <a href="#" class="catalog-aside-nav__link">Новости</a>
+                            </li>
+                            <li class="catalog-aside-nav__item">
+                                <a href="#" class="catalog-aside-nav__link">Статьи</a>
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <aside class="catalog-aside">
+                        <h3 class="mb-2">Поиск по сайту</h3>
+                        <form type="search" class="catalog-aside-search">
+                            <div class="input-group mb-6">
+                                <input type="text" class="form-control" placeholder="введите поисковый запрос">
+                                <div class="input-group-append pr-3">
+                                    <button class="btn px-0" type="submit"><i class="icon icon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </aside>
+
+                    <aside class="catalog-aside">
+                        <h3 class="mb-2">Популярное</h3>
+                        <div class="card  card-small card-popular">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/catalog/catalog-1.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__type">Рейтинги</h4></a>
+                                <a href="#"><h4 class="card__title">Самые безопасные авиакомпании мира 2020</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>2020 год вновь стал самым безопасным в истории авиации. Количество погибших в авиакатастрофах снизилось почти в 2 раза</p>
+                            </div>
+                        </div>
+                        <div class="card  card-small card-popular">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/catalog/catalog-2.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__type">Новости</h4></a>
+                                <a href="#"><h4 class="card__title">35 крупнейших авиакомпаний России 2020</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>В 2013 году российские авиакомпании перевезли 84,6 миллиона пассажиров. Рост по сравнению с 2012 годом составил 14% или 10,6 миллионов пассажиров пассажиров</p>
+                            </div>
+                        </div>
+                        <div class="card  card-small card-popular">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/catalog/catalog-3.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__type">Рейтинги</h4></a>
+                                <a href="#"><h4 class="card__title">Крупнейшие аэропорты России 2020</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>Представляем вашему вниманию итоги аэропортов России в 2013 году. Аэропорты ранжированы по количеству пассажиров</p>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <aside class="catalog-aside">
+                        <h3 class="mb-2 mt-4">Новое</h3>
+                        <div class="card  card-small card-popular">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/news/news-1.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__type">Рейтинги</h4></a>
+                                <a href="#"><h4 class="card__title">Самые безопасные авиакомпании мира 2020</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>2020 год вновь стал самым безопасным в истории авиации. Количество погибших в авиакатастрофах снизилось почти в 2 раза</p>
+                            </div>
+                        </div>
+                        <div class="card  card-small card-popular">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/news/news-2.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__type">Новости</h4></a>
+                                <a href="#"><h4 class="card__title">35 крупнейших авиакомпаний России 2020</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>В 2013 году российские авиакомпании перевезли 84,6 миллиона пассажиров. Рост по сравнению с 2012 годом составил 14% или 10,6 миллионов пассажиров пассажиров</p>
+                            </div>
+                        </div>
+                        <div class="card  card-small card-popular">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/news/news-3.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__type">Рейтинги</h4></a>
+                                <a href="#"><h4 class="card__title">Крупнейшие аэропорты России 2020</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>Представляем вашему вниманию итоги аэропортов России в 2013 году. Аэропорты ранжированы по количеству пассажиров</p>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside class="catalog-aside">
+                        <h3 class="mb-2 mt-4">Новое</h3>
+                        <div class="card  card-small card-popular">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/news/news-1.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__type">Рейтинги</h4></a>
+                                <a href="#"><h4 class="card__title">Самые безопасные авиакомпании мира 2020</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>2020 год вновь стал самым безопасным в истории авиации. Количество погибших в авиакатастрофах снизилось почти в 2 раза</p>
+                            </div>
+                        </div>
+                        <div class="card  card-small card-popular">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/news/news-2.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__type">Новости</h4></a>
+                                <a href="#"><h4 class="card__title">35 крупнейших авиакомпаний России 2020</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>В 2013 году российские авиакомпании перевезли 84,6 миллиона пассажиров. Рост по сравнению с 2012 годом составил 14% или 10,6 миллионов пассажиров пассажиров</p>
+                            </div>
+                        </div>
+                        <div class="card  card-small card-popular">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/news/news-3.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__type">Рейтинги</h4></a>
+                                <a href="#"><h4 class="card__title">Крупнейшие аэропорты России 2020</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>Представляем вашему вниманию итоги аэропортов России в 2013 году. Аэропорты ранжированы по количеству пассажиров</p>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside class="catalog-aside">
+                        <h3 class="mb-2 mt-4">Новое</h3>
+                        <div class="card  card-small card-popular">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/news/news-1.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__type">Рейтинги</h4></a>
+                                <a href="#"><h4 class="card__title">Самые безопасные авиакомпании мира 2020</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>2020 год вновь стал самым безопасным в истории авиации. Количество погибших в авиакатастрофах снизилось почти в 2 раза</p>
+                            </div>
+                        </div>
+                        <div class="card  card-small card-popular">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/news/news-2.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__type">Новости</h4></a>
+                                <a href="#"><h4 class="card__title">35 крупнейших авиакомпаний России 2020</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>В 2013 году российские авиакомпании перевезли 84,6 миллиона пассажиров. Рост по сравнению с 2012 годом составил 14% или 10,6 миллионов пассажиров пассажиров</p>
+                            </div>
+                        </div>
+                        <div class="card  card-small card-popular">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/news/news-3.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__type">Рейтинги</h4></a>
+                                <a href="#"><h4 class="card__title">Крупнейшие аэропорты России 2020</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>Представляем вашему вниманию итоги аэропортов России в 2013 году. Аэропорты ранжированы по количеству пассажиров</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section my-sm-4" id="section-interested">
+            <div class="container-fluid">
+                <div class="section__header">
+                    <h1>Другое по теме</h1>
+                </div>
+                <div class="index-cards">
+                    <div class="row">
+                        <div class="card card-small col-lg-4 col-sm-6">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/catalog/catalog-4.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__title">Крупнейшие в мире производители гражданских самолётов в 2020 году</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>Представляем вашему вниманию итоги аэропортов России в 2013 году. Аэропорты ранжированы по количеству пассажиров</p>
+                            </div>
+                        </div>
+                        <div class="card card-small col-lg-4 col-sm-6">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/catalog/catalog-5.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__title">Крупнейшие в мире производители гражданских самолётов в 2020 году</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>Представляем вашему вниманию итоги аэропортов России в 2013 году. Аэропорты ранжированы по количеству пассажиров</p>
+                            </div>
+                        </div>
+                        <div class="card card-small col-lg-4 col-sm-6">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/catalog/catalog-6.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__title">Крупнейшие в мире производители гражданских самолётов в 2020 году</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>Представляем вашему вниманию итоги аэропортов России в 2013 году. Аэропорты ранжированы по количеству пассажиров</p>
+                            </div>
+                        </div>
+                        <div class="card card-small col-lg-4 col-sm-6">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/catalog/catalog-7.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__title">Крупнейшие в мире производители гражданских самолётов в 2020 году</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>Представляем вашему вниманию итоги аэропортов России в 2013 году. Аэропорты ранжированы по количеству пассажиров</p>
+                            </div>
+                        </div>
+                        <div class="card card-small col-lg-4 col-sm-6">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/catalog/catalog-8.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__title">Крупнейшие в мире производители гражданских самолётов в 2020 году</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>Представляем вашему вниманию итоги аэропортов России в 2013 году. Аэропорты ранжированы по количеству пассажиров</p>
+                            </div>
+                        </div>
+                        <div class="card card-small col-lg-4 col-sm-6">
+                            <a href="#">
+                                <figure class="card__img" style="background-image: url('static/img/content/catalog/catalog-9.jpg');"></figure>
+                            </a>
+                            <div class="card__caption">
+                                <a href="#"><h4 class="card__title">Крупнейшие в мире производители гражданских самолётов в 2020 году</h4></a>
+                                <p class="date">2 декабря 2020</p>
+                                <p class="content card__text" data-dot>Представляем вашему вниманию итоги аэропортов России в 2013 году. Аэропорты ранжированы по количеству пассажиров</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <footer class="page__footer">
+            <div class="container-fluid">
+                <div class="footer">
+                    <div class="row footer-top border-bottom">
+                        <figure class="footer-top__logo col-auto pr-4">
+                            <img src="static/img/general/footer-logo.png" width="196px" alt="Летаем вместе">
+                        </figure>
+                        <div class="col-auto">
+                            <div class="social mt-4">
+                                <a href="#" class="">
+                                    <i class="icon icon-vk"></i>
+                                </a>
+                                <a href="#" class="">
+                                    <i class="icon icon-ok"></i>
+                                </a>
+                                <a href="#" class="">
+                                    <i class="icon icon-facebook"></i>
+                                </a>
+                                <a href="#" class="">
+                                    <i class="icon icon-instagram"></i>
+                                </a>
+                                <a href="#" class="">
+                                    <i class="icon icon-twitter"></i>
+                                </a>
+                                <a href="#" class="">
+                                    <i class="icon icon-telegram"></i>
+                                </a>
+                                <a href="#" class="">
+                                    <i class="icon icon-dzen"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="footer-nav border-bottom">
+                        <div class="footer-nav__item">
+                            <ul class="footer-nav__list">
+                                <li>Авиабилеты</li>
+                            </ul>
+                            <ul class="footer-nav__list mt-lg-auto mb-lg-8">
+                                <li>О нас</li>
+                                <li><a href="#">О проекте</a>
+                                </li>
+                                <li><a href="#">Сотрудничество</a>
+                                </li>
+                                <li><a href="#">Партнёрская программа</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav__item">
+                            <ul class="footer-nav__list ">
+                                <li>Авиакомпании</li>
+                                <li><a href="#">Авиакомпании России</a>
+                                </li>
+                                <li><a href="#">Авиакомпании мира</a>
+                                </li>
+                                <li><a href="#">Рейтинги авиакомпаний</a>
+                                </li>
+                                <li><a href="#">Новости авиакомпаний</a>
+                                </li>
+                                <li><a href="#">Авиаальянсы</a>
+                                </li>
+                                <li><a href="#">Авиагруппы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav__item">
+                            <ul class="footer-nav__list ">
+                                <li>Аэропорты</li>
+                                <li><a href="#">Аэропорты России</a>
+                                </li>
+                                <li><a href="#">Аэропорты мира</a>
+                                </li>
+                                <li><a href="#">Рейтинги аэропортов</a>
+                                </li>
+                                <li><a href="#">Новости аэропортов</a>
+                                </li>
+                                <li><a href="#">Авиамегаполисы</a>
+                                </li>
+                                <li><a href="#">Аэропортовые группы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav__item">
+                            <ul class="footer-nav__list ">
+                                <li>Самолёты</li>
+                                <li><a href="#">Российские самолёты</a>
+                                </li>
+                                <li><a href="#">Зарубежные самолёты</a>
+                                </li>
+                                <li><a href="#">Авиапроизводители</a>
+                                </li>
+                                <li><a href="#">Рейтинги самолётов</a>
+                                </li>
+                                <li><a href="#">Новости авиапрома</a>
+                                </li>
+                                <li><a href="#">Авиасалоны</a>
+                                </li>
+                                <li><a href="#">Пилотажные группы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav__item">
+                            <ul class="footer-nav__list ">
+                                <li>Путешетсвия</li>
+                                <li><a href="#">Отели</a>
+                                </li>
+                                <li><a href="#">Прокат авто</a>
+                                </li>
+                                <li><a href="#">Страхование</a>
+                                </li>
+                                <li><a href="#">Экскурсии</a>
+                                </li>
+                                <li><a href="#">Туры</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="footer-bottom">
+                        <div class="row">
+                            <div class="col-auto mb-1">
+                                © Летаем вместе — портал для авиапассажиров и путешественников
+                            </div>
+                            <div class="col-auto pl-lg-10 mb-1">
+                                <a href="#">Политика конфиденциальности</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </footer>
+
+        <script src="static/js/separate-js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody();
+        </script>
+
+        <script src="static/js/main.min.js"></script>
+    </body>
+
+</html>
